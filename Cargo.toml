@@ -1,7 +1,20 @@
 [package]
-name = "newsletter-backend"
+name = "newsletter_backend"
 version = "0.1.0"
 edition = "2021"
 
+[lib]
+path = "src/lib.rs"
+
 [dependencies]
 actix-web = "4"
+tokio = { version = "1", features = ["macros", "rt-multi-thread"]}
+
+[[bin]]
+path = "src/main.rs"
+name = "newsletter_backend"
+
+# Dev dependencies are used execlusively when running tests or examples
+# they do not get included in the final applicaiton binary!
+[dev-dependencies]
+reqwest = "0.11"
