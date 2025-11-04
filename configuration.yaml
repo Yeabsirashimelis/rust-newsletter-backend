@@ -1,0 +1,10 @@
+application_port: 8080
+database:
+  host: "ep-solitary-fog-a41u8kcy-pooler.us-east-1.aws.neon.tech"
+  port: 5432
+  username: "neondb_owner"
+  password: "npg_MP0r5IhsbOZN"
+  database_name: "neondb"
+  require_ssl: true
+  ssl_mode: "require"
+  channel_binding: "require"
